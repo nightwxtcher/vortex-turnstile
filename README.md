@@ -3,8 +3,12 @@
 ![Vortex Banner](https://img.shields.io/badge/Version-2.0_PRO-blueviolet?style=for-the-badge)
 ![Patchright](https://img.shields.io/badge/Engine-Patchright-cyan?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Ultra_Stealth-green?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-orange?style=for-the-badge)
 
 A high-performance, modular Node.js service designed to bypass Cloudflare Turnstile with **zero detection** in headless mode. Refactored for maximum stability, security, and professional integration.
+
+> [!TIP]
+> **Efficacy Recommendation**: For maximum bypass success rate (especially on strict sites), it is highly recommended to use `--browser_type chrome` or `--browser_type msedge` instead of native `chromium`. This utilizes your system's real browser binary with legitimate signatures.
 
 ---
 
@@ -12,6 +16,7 @@ A high-performance, modular Node.js service designed to bypass Cloudflare Turnst
 
 - **🛡️ Ultra-Stealth Engine**: Powered by **Patchright**, implemented with Python-parity logic for perfect fingerprinting in headless mode.
 - **🏗️ Modular Architecture**: Clean, enterprise-ready separation of concerns (Core, Services, Routes, Utils).
+- **🐧 Multi-Platform**: Fully tested and functional on **Windows** and **Linux** (Servers/Desktops).
 - **♻️ Auto-Healing Pool**: Built-in recycling system that restarts browser instances after $N$ tasks to ensure zero memory degradation.
 - **🔒 Security First**: Middleware authentication via `x-api-key` and full support for `HTTP/S` and `JSON POST` requests.
 - **📡 Intelligent Proxying**: Automatic transformation of SOCKS5 to high-privacy protocols and remote DNS resolution.
@@ -31,6 +36,8 @@ A high-performance, modular Node.js service designed to bypass Cloudflare Turnst
 2. **Deploy Engine**:
    ```bash
    npx patchright install chromium
+   # If using Linux (Ubuntu/Debian), install necessary dependencies:
+   # npx patchright install-deps
    ```
 
 3. **Configure Proxies**:
@@ -50,7 +57,7 @@ Start the Vortex engine with the following flags to optimize for your environmen
 | `--api_key` | Enable authentication | `true` |
 | `--proxy` | Rotate proxies | `true` |
 | `--debug` | Verbose logging | `true` |
-| `--browser_type` | Engine selector | `chrome` (System) |
+| `--browser_type` | Engine selector | `chrome` (Highly Recommended) |
 
 ---
 
@@ -83,7 +90,7 @@ Start the Vortex engine with the following flags to optimize for your environmen
 ---
 
 > [!IMPORTANT]
-> **Vortex-Turnstile** is optimized for high-volume bypass. To maintain maximum stealth, it is recommended to use **Residentials Proxies** and the `--browser_type chrome` flag to utilize system-level browser signatures.
+> **Vortex-Turnstile** is optimized for high-volume bypass. To maintain maximum stealth, it is recommended to use **Residential Proxies** and utilize system-level browser signatures (Chrome/Edge).
 
 ---
 © 2026 Vortex Solver. All Rights Reserved.
